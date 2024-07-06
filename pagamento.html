@@ -107,6 +107,14 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .btn-custom {
+                background-color: #7F5283;
+                border-color: #7F5283;
+                margin-right: 20px;
+                padding: 8px 70px; /* Ajuste o padding conforme necessário */
+                font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+        }
     </style>
 
     <!-- navbar -->
@@ -138,13 +146,13 @@
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
             <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
           </svg>
-          <h1 class="fw-bold mb-0 fs-5 text-center" >O que você deseja fazer?</h1>
+          <h1 class="fw-bold mb-0 fs-5 text-center" >Método de Pagamento</h1>
         </div>
-        <div class="modal-body p-5 pt-0">
-            <div class="d-grid gap-2  ">
-                <button class="btn btn-primary" style="background-color: #7F5283; border-color: #7F5283;" type="button" onclick="window.location.href='cad_automovel.html'">Viagens</button>
-                <button class="btn btn-primary" style="background-color: #7F5283; border-color: #7F5283; " type="button" onclick="window.location.href='cad_automovel.html'">Entregas</button>
-                <button class="btn btn-primary" style="background-color: #7F5283; border-color: #7F5283;" type="button" onclick="window.location.href='cad_automovel.html'">Viagens e Entregas</button>            
+        <div class="modal-body p-5 pt-0 d-flex justify-content-center">
+            <div class="d-flex flex-column gap-2">
+                <button class="btn btn-primary btn-custom" type="button" onclick="window.location.href='FIM.html'">PIX</button>
+                <button class="btn btn-primary btn-custom" type="button" onclick="window.location.href='FIM.html'">DÉBITO</button>
+                <button class="btn btn-primary btn-custom" type="button" onclick="window.location.href='FIM.html'">CRÉDITO</button>            
             </div>
         </div>
       </div>

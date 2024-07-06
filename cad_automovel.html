@@ -108,9 +108,9 @@
         display: block !important;
       }
       #fotoPerfil {
-            width: 150px;
+            width: 200px;
             height: 150px;
-            border-radius: 50%;
+            border-radius: 0%;
             cursor: pointer;
         }
     </style>
@@ -135,13 +135,13 @@
     </div>
   </nav>
   
-
+<div class="container py-3"> 
 <!-- Formulário-->
 <br>
-<br>
-<div class="container py-3"> 
+<h5>Informações do veículo</h5>
+<hr>
     <label for="uploadInput" style="margin-left: 20px;">
-        <img id="fotoPerfil" src="images/icone_perfil.png" alt="Foto de Perfil">
+        <img id="fotoPerfil" src="images/icone_car.png" alt="Foto de Perfil">
     </label>
     <input type="file" id="uploadInput" accept="image/*" style="display: none;">
     
@@ -160,201 +160,115 @@
         });
     </script>
 <br>
+<br>
 
 <div class="row">
-  <div class="col-md-4">
-    <label for="validationCustom01" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="validationCustom01" required>
-  </div>
-  <div class="col-md-4">
-    <label for="genderSelect" class="form-label">Gênero</label>
-    <select class="form-select" id="genderSelect" required>
+<div class="col-md-4">
+    <label for="marcaSelect" class="form-label">Marca</label>
+    <select class="form-select" id="marcaSelect" required>
         <option selected disabled value="">Escolha...</option>
-        <option value="Agênero">Agênero</option>
-        <option value="Andrógeno">Andrógeno</option>
-        <option value="Bigênero">Bigênero</option>
-        <option value="Homem Cisgênero">Homem Cis</option>
-        <option value="Mulher Cisgênero">Mulher Cis</option>
-        <option value="Genderqueer">Genderqueer</option>
-        <option value="Gênero Fluido">Gênero Fluido</option>
-        <option value="Gênero Não-binário">Não-binário</option>
-        <option value="Homem Transgênero">Homem Trans</option>
-        <option value="Mulher Transgênero">Mulher Trans</option>
-        <option value="Pangênero">Pangênero</option>
-        <option value="Outro">Outro</option>
-        <option value="Prefiro não responder">Prefiro não responder</option>
+        <option value="Carro">Carro</option>
     </select>
     <div class="invalid-feedback">
-        Por favor, selecione um gênero válido.
+        Por favor, selecione uma marca válida.
     </div>
 </div>
-  <div class="col-md-4">
-    <label for="validationCustom02" class="form-label">Telefone</label>
-    <input type="tel" class="form-control" id="validationCustom02" pattern="[0-9]*" inputmode="numeric" required>
-    <div class="invalid-feedback">
-        Por favor, insira um número de telefone válido.
-    </div>
-  </div>
 
-  <div class="col-md-4">
-    <label for="validationCustomUsername" class="form-label">Data de nascimento</label>
+<div class="col-md-4">
+    <label for="modeloSelect" class="form-label">Modelo</label>
+    <select class="form-select" id="modeloSelect" required>
+        <option selected disabled value="">Escolha...</option>
+        <option value="Carro">Carro</option>
+    </select>
+    <div class="invalid-feedback">
+        Por favor, selecione um modelo válido.
+    </div>
+</div>
+
+<div class="col-md-4">
+    <label for="dataVencimentoInput" class="form-label">Ano</label>
     <div class="input-group has-validation">
-      
-      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-      <div class="invalid-feedback">
-        Por favor informe a data de nascimento.
-      </div>
+        <input type="text" class="form-control data-input" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+            Por favor, informe um ano válido.
+        </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustom01" class="form-label">País</label>
-    <select class="form-select" id="validationCustom01" required>
-        <option selected disabled value="">Escolha...</option>
-        <option value="Brasil">Brasil</option>
-        <option value="Argentina">Argentina</option>
-        <option value="Paquistao">Paquistão</option>
-        <option value="Alemanha">Alemanha</option>
-    </select>
-    <div class="invalid-feedback">
-        Selecione um país válido.
-    </div>
-</div>
-<div class="col-md-4">
-  <label for="validationCustom02" class="form-label">Estado</label>
-  <select class="form-select" id="validationCustom02" required>
-      <option selected disabled value="">Escolha...</option>
-      <option value="AC">Acre</option>
-      <option value="AL">Alagoas</option>
-      <option value="AP">Amapá</option>
-      <option value="AM">Amazonas</option>
-      <option value="BA">Bahia</option>
-      <option value="CE">Ceará</option>
-      <option value="DF">Distrito Federal</option>
-      <option value="ES">Espírito Santo</option>
-      <option value="GO">Goiás</option>
-      <option value="MA">Maranhão</option>
-      <option value="MT">Mato Grosso</option>
-      <option value="MS">Mato Grosso do Sul</option>
-      <option value="MG">Minas Gerais</option>
-      <option value="PA">Pará</option>
-      <option value="PB">Paraíba</option>
-      <option value="PR">Paraná</option>
-      <option value="PE">Pernambuco</option>
-      <option value="PI">Piauí</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN">Rio Grande do Norte</option>
-      <option value="RS">Rio Grande do Sul</option>
-      <option value="RO">Rondônia</option>
-      <option value="RR">Roraima</option>
-      <option value="SC">Santa Catarina</option>
-      <option value="SP">São Paulo</option>
-      <option value="SE">Sergipe</option>
-      <option value="TO">Tocantins</option>
-  </select>
-  <div class="invalid-feedback">
-    Selecione um Estado válido
-  </div>
 </div>
 
+<div class="col-md-4">
+    <label for="placaInput" class="form-label">Placa</label>
+    <input type="text" class="form-control" id="placaInput" required>
+</div>
+
+<div class="col-md-4">
+    <label for="renavamInput" class="form-label">Número do Renavam</label>
+    <input type="text" class="form-control" id="renavamInput" required>
+</div>
+
+<div class="col-md-4">
+    <label for="documentoInput" class="form-label">Documento</label>
+    <input type="text" class="form-control" id="documentoInput" required>
+</div>
+</div>
+<br><br>
+<h5>Seguro</h5>
+<hr>
 <br>
+<div class="row">
 <div class="col-md-4">
-  <label for="validationCustom03" class="form-label">Cidade</label>
-  <select class="form-select" id="validationCustom03" required>
-      <option selected disabled value="">Escolha...</option>
-      <option value="AC">Rio Branco</option>
-      <option value="AL">Maceió</option>
-      <option value="AP">Macapá</option>
-      <option value="AM">Manaus</option>
-      <option value="BA">Salvador</option>
-      <option value="CE">Fortaleza</option>
-      <option value="DF">Brasília</option>
-      <option value="ES">Vitória</option>
-      <option value="GO">Goiânia</option>
-      <option value="MA">São Luís</option>
-      <option value="MT">Cuiabá</option>
-      <option value="MS">Campo Grande</option>
-      <option value="MG">Belo Horizonte</option>
-      <option value="PA">Belém</option>
-      <option value="PB">João Pessoa</option>
-      <option value="PR">Curitiba</option>
-      <option value="PE">Recife</option>
-      <option value="PI">Teresina</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN">Natal</option>
-      <option value="RS">Porto Alegre</option>
-      <option value="RO">Porto Velho</option>
-      <option value="RR">Boa Vista</option>
-      <option value="SC">Florianópolis</option>
-      <option value="SP">São Paulo</option>
-      <option value="SE">Aracaju</option>
-      <option value="TO">Palmas</option>
-  </select>
-  <div class="invalid-feedback">
-      Selecione uma cidade válida
-  </div>
+    <label for="seguradoraInput" class="form-label">Seguradora</label>
+    <input type="text" class="form-control" id="seguradoraInput" required>
 </div>
-<div class="col-md-4">
-  <label for="validationCustom02" class="form-label">CEP</label>
-  <input type="text" class="form-control" id="validationCustom02" required>
-</div>
-<div class="col-md-4">
-  <label for="validationCustom02" class="form-label">Rua</label>
-  <input type="text" class="form-control" id="validationCustom02" required>
-</div>
-<div class="col-md-4">
-  <label for="validationCustom02" class="form-label">N°</label>
-  <input type="text" class="form-control" id="validationCustom02" required>
-</div>
-<div class="col-md-4">
-  <label for="validationCustom02" class="form-label">Bairro</label>
-  <input type="text" class="form-control" id="validationCustom02" required>
-</div>
-<div class="col-md-4">
-  <label for="validationCustom02" class="form-label">Complemento</label>
-  <input type="text" class="form-control" id="validationCustom02" required>
-</div>
-</div>
-  <!-- Data -->
-  <script>
-    document.getElementById('validationCustomUsername').addEventListener('input', function(e) {
-        var input = e.target;
-        var value = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
-        var formattedValue = '';
 
-        if (value.length > 0) {
-            formattedValue += value.substring(0, 2); // Dia
-        }
-        if (value.length > 2) {
-            formattedValue += '/' + value.substring(2, 4); // Mês
-        }
-        if (value.length > 4) {
-            formattedValue += '/' + value.substring(4, 8); // Ano
-        }
+<div class="col-md-4">
+    <label for="dataVencimentoInput" class="form-label">Data de vencimento</label>
+    <div class="input-group has-validation">
+        <input type="text" class="form-control data-input" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+            Por favor, informe uma data de vencimento.
+        </div>
+    </div>
+</div>
 
-        input.value = formattedValue;
+<div class="col-md-4">
+    <label for="apoliceInput" class="form-label">N° da apólice</label>
+    <input type="text" class="form-control" id="apoliceInput" required>
+</div>
+</div>
+
+
+<script>
+    document.querySelectorAll('.data-input').forEach(function(input) {
+        input.addEventListener('input', function(e) {
+            var value = e.target.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+            var formattedValue = '';
+
+            if (value.length > 0) {
+                formattedValue += value.substring(0, 2); // Dia
+            }
+            if (value.length > 2) {
+                formattedValue += '/' + value.substring(2, 4); // Mês
+            }
+            if (value.length > 4) {
+                formattedValue += '/' + value.substring(4, 8); // Ano
+            }
+
+            e.target.value = formattedValue;
+        });
     });
 </script>
 
-<div class="container mt-5">
-  <div class="form-group">
-    <label for="inputGroupFile04">Comprovante de residência</label>
-    <div class="input-group">
-      <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
-    </div>
-  </div>
-</div>
 <br>
 <br>
 <div class="d-flex justify-content-end">
-  <button class="btn btn-primary" style="background-color: #7F5283; border-color: #7F5283; margin-right: 20px;" type="button" onclick="window.location.href='automovel.html'">Continuar</button>
+  <button class="btn btn-primary" style="background-color: #7F5283; border-color: #7F5283; margin-right: 20px;" type="button" onclick="window.location.href='pagamento.html'">Continuar</button>
 </div>
-</div>        
+        
 
 <br>
 <br> 
   
-
+</div>
 <!-- footer -->
 
 <footer class="container-fluid"  style="background-color: #E9ECEF;">
